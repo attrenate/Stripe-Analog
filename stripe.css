@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("https://s3-alpha-sig.figma.com/img/0ec7/d7e3/d31bcd8f1e43572e36d821de1c277580?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=aOGQYvpe0y2GKTiP~1BVzDAf6JizmVkVrFEsXodjmeJteW7hdWH9Ea81lkXKvumkgMGVNCs5yaJX0D4sSKPcgQ44DexmtkZqaQNwV1TFYgsXYuDbXem3g9acg~dqnZIlDR46KeSI1ZrO5CuRfy33HPLOmERPzHWNf2Q8TM0eoPiI8WdAfJLieUGsgz8QgCKH1Mo5R0HBjdrNfbggBix5ZXyOZVjTcwqp~qa3o~e7uLjAalr9Zbj~9mIp5PUI9ZI2E4I4c6cQM5TBz1QveMedOduwsV73qjHdsdFmNLWAe3-SUZkJeABVqjKFkaeJEchkg-zy8DOn-FrHvH7jjrcZnA");
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 51%, 0 86%);
+          clip-path: polygon(0 0, 100% 0, 100% 51%, 0 86%);
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .stripe {
+  z-index: 2;
+  color: #FAEACA;
+  font-family: "Inter", sans-serif;
+  margin-left: 18rem;
+  margin-top: 2rem;
+  position: absolute;
+}
+header .header-background {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 39%, 0 81%);
+          clip-path: polygon(0 0, 100% 0, 100% 39%, 0 81%);
+  z-index: 1;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+header .header-wrapper {
+  display: flex;
+  justify-content: center;
+}
+header .header-wrapper ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  font-weight: 500;
+}
+header .header-wrapper ul li {
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  color: #FAEACA;
+  cursor: pointer;
+  margin-top: 2.5rem;
+}
+header .button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  font-size: 0.871875rem;
+}
+header .button-wrapper .header-button {
+  background-color: inherit;
+  font-family: "Inter", sans-serif;
+  color: #FAEACA;
+  border-color: inherit;
+  font-weight: 500;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+header .button-wrapper .header-button1 {
+  background-color: #FAEACA;
+  border-radius: 1rem;
+  border-color: #FAEACA;
+  color: #E18538;
+  cursor: pointer;
+}/*# sourceMappingURL=stripe.css.map */
