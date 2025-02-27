@@ -102,4 +102,46 @@ header .header-p {
   margin-right: 10rem;
   position: relative;
   z-index: 2;
+}
+header .p-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-right: 20rem;
+  gap: 1rem;
+}
+header .p-button-wrapper .p-button1 {
+  background-color: #0A2540;
+  font-family: "Inter", sans-serif;
+  width: 6.9375rem;
+  height: 2.0625rem;
+  border-radius: 1rem;
+  border-color: #0A2540;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+header .p-button-wrapper .p-button {
+  font-family: "Inter", sans-serif;
+  width: 6.9375rem;
+  height: 2.0625rem;
+  border-radius: 1rem;
+  background-color: inherit;
+  cursor: pointer;
+  border-color: inherit;
+  font-weight: 500;
+}
+header .p-button-wrapper .p-arrow {
+  background-color: #FFFFFF;
+}
+header .icon-wrapper {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+}
+header .icon {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=stripe.css.map */

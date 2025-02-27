@@ -119,4 +119,47 @@ header {
         position: relative;  
         z-index: 2; 
     }
+    .p-button-wrapper{
+        @include flex-center();
+        margin-top: 2rem;
+        margin-right: 20rem;
+        gap: 1rem;
+        .p-button1{
+          background-color: #0A2540;
+          font-family: $primary-font;
+          width: 6.9375rem;
+          height: 2.0625rem;
+          border-radius: 1rem;
+          border-color: #0A2540;
+          cursor: pointer;
+          color: #FFFFFF;
+          font-weight: 500;
+        }
+        .p-button{
+          font-family: $primary-font;
+          width: 6.9375rem;
+          height: 2.0625rem;
+          border-radius: 1rem;
+          background-color: inherit;
+          cursor: pointer;
+          border-color: inherit;
+          font-weight: 500;
+        }
+        .p-arrow{
+            background-color: #FFFFFF;
+        }
+    }
+    .icon-wrapper{
+        margin-top: 10rem;
+        display: grid;
+        grid-template-columns: repeat(4, 0.5fr); 
+        grid-template-rows: repeat(2, auto); 
+        gap: 1rem; 
+       }
+       .icon{
+        
+        display: flex;
+       
+        justify-content: center;
+       }
 }
