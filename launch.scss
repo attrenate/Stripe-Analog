@@ -1,0 +1,113 @@
+// Variables
+$color-primary: #FAEACA;
+$primary-font: 'Inter', sans-serif;
+
+@mixin flex-around{
+    display: flex;
+    justify-content: space-around;
+}
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+}
+// section 11
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    main{
+        section{
+            .title-wrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                margin-left: 10rem;
+                gap: 2rem;
+                .little-header{
+                    font-family: $primary-font;
+                    font-size: 1rem;
+                    color: #635BFF;
+                    margin-top: 2rem;
+                    cursor: pointer;
+                }
+                #launch{
+                    color: #0A2540;
+                    font-family: $primary-font;
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+                #title-p{
+                    color: #425466;
+                    font-family: $primary-font;
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+            }
+            .article-wrapper{
+                @include flex-center();
+                gap: 2rem;
+                margin-top: 3.5rem;
+            }
+            #article{
+                width: 21.16625rem;
+                height: 29rem;
+                background-color: inherit;
+                border-radius: 0.5rem;
+                transition: transform 0.3s ease-in-out;
+
+         &:hover {
+
+             transform: translateY(-10px); 
+             .extra-text{
+                 display: block; 
+             }
+         }
+            }
+            .article-header{
+                margin-top: 1rem;
+                font-family: $primary-font;
+                font-size: 1.504375rem;
+                color: #0A2540;
+                font-weight: 500;
+            }
+            .article-p{
+                margin-top: 1.5rem;
+                color: #425466;
+                font-family: $primary-font;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+            
+                .extra-text {
+                    display: none; 
+                    margin-top: 1rem;
+                    color: #635BFF;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-align: center;
+                    cursor: pointer;
+                    margin-right: 4rem;
+                }
+            }
+            @media (max-width: 768px) { 
+               .title-wrapper{
+                @include flex-center();
+               }
+               .article-wrapper{
+                display: flex;
+                flex-direction: column;
+               }
+            }
+        
+            @media (max-width: 480px) { 
+                .title-wrapper{
+                    @include flex-center();
+                   }
+                   .article-wrapper{
+                    display: flex;
+                    flex-direction: column;
+                   }
+            }
+    }
+}

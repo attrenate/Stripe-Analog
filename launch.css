@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body main section .title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 10rem;
+  gap: 2rem;
+}
+body main section .title-wrapper .little-header {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #635BFF;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+body main section .title-wrapper #launch {
+  color: #0A2540;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+body main section .title-wrapper #title-p {
+  color: #425466;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+body main section .article-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+body main section #article {
+  width: 21.16625rem;
+  height: 29rem;
+  background-color: inherit;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+body main section #article:hover {
+  transform: translateY(-10px);
+}
+body main section #article:hover .extra-text {
+  display: block;
+}
+body main section .article-header {
+  margin-top: 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.504375rem;
+  color: #0A2540;
+  font-weight: 500;
+}
+body main section .article-p {
+  margin-top: 1.5rem;
+  color: #425466;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+body main section .extra-text {
+  display: none;
+  margin-top: 1rem;
+  color: #635BFF;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 4rem;
+}
+@media (max-width: 768px) {
+  body main .title-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  body main .article-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  body main .title-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  body main .article-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=launch.css.map */
