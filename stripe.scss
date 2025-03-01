@@ -103,8 +103,8 @@ header {
         font-size: 5rem;
         @include flex-center();
         align-items: center;
-        margin-right: 5rem;
-        margin-top: 5rem;
+        margin-right: 15rem;
+        margin-top: 4rem;
         position: relative;
     }
 
@@ -115,7 +115,7 @@ header {
         color: #425466;
         margin-top: 2rem;
         @include flex-center();
-        margin-right: 10rem;
+        margin-right: 22rem;
         position: relative;  
         z-index: 2; 
     }
@@ -152,14 +152,30 @@ header {
     .icon-wrapper{
         margin-top: 10rem;
         display: grid;
-        grid-template-columns: repeat(4, 0.5fr); 
+        grid-template-columns: repeat(4, auto); 
         grid-template-rows: repeat(2, auto); 
         gap: 1rem; 
+        width: 55rem;
+        margin-left: 20rem;
        }
        .icon{
-        
         display: flex;
-       
         justify-content: center;
+        align-items: center;
        }
+      .phone-info{
+        z-index: 3;
+        position: absolute;
+        margin-left: 60rem;
+        margin-top: 7rem;
+        transform: scale(0.9);
+      } 
+    
+    .background-info{
+        position: absolute;
+        margin-left: 60rem;
+        z-index: 2;
+        transform: scale(0.9);
+        margin-bottom: 10rem;
+    }
 }
